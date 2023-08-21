@@ -12,5 +12,8 @@ Gemfile.lock
 /log/*
 # Ignore IDE files
 .idea/
+.vscode/
+# Ignore the build folder
+build/
 
 
