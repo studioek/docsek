@@ -1,5 +1,5 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://studioek.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/docsek" # the subpath of your site, e.g. /blog
 title: "docsek" # the name of your site, e.g. ACME Corp.
 tagline: "create documentation with ease" # the tagline of your site
 lang: "en-US" # set the language for your site, e.g. en-US
