@@ -1,10 +1,10 @@
 - name: What is the docsek?
-  link: /docs/what-is-the-docsek/
+  link: ./docs/what-is-the-docsek/
 - name: How to use?
-  link: /docs/how-to-use/
+  link: ./docs/how-to-use/
 - name: About
   details:
     - name: About
-      link: /docs/about/
+      link: ./docs/about/
     - name: GitHub Repo
       link: https://github.com/studioek/docsek
