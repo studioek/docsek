@@ -1,0 +1,25 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "docsek" # the name of your site, e.g. ACME Corp.
+tagline: "create documentation with ease" # the tagline of your site
+lang: "en-US" # set the language for your site, e.g. en-US
+
+# set theme from https://daisyui.com/docs/themes/
+# you can select one of the themes from the list
+site_theme: 'synthwave' # light, dark, cupcake, forest, ...
+
+# set the publisher
+publisher: "StudioEK"
+
+# set the footer content
+footer_content:
+  github: "https://github.com/studioek/docsek"
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: order
+    order:
+      - 'index.md'
+      - '*.md'

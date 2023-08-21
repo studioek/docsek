@@ -1,0 +1,81 @@
+---
+---
+
+
+h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 3em;
+}
+
+body {
+    --head-from-color: #C23373;
+    --head-to-color: #F8F0E5;
+}
+
+.title {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--head-from-color), var(--head-to-color));
+}
+
+.footnote {
+    color: var(--head-from-color);
+}
+
+.hero .card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    transition: 230ms all;
+    z-index: 2;
+}
+.hero .card:hover {
+    transform: scale(1.04);
+}
+.hero .card:first-child {
+    border-radius: 20px 5px 5px 20px;
+    z-index: 3;
+}
+.hero .card:last-child {
+    border-radius: 5px 20px 20px 5px;
+    z-index: 1;
+}
+.hero .card .card-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero .card .card-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.hero .card .btn {
+    border-radius: 20px;
+    transition: 230ms all;
+}
+.hero .card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.hero .card:hover .btn {
+    color: #fff;
+    background-image: linear-gradient(to right, var(--head-from-color), var(--head-to-color));
+}
+.hero:has(.card:hover) .card:not(:hover) .btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+body:has(.card:nth-child(1):hover) {
+    --head-from-color: #4B8BBE;
+    --head-to-color: #FFE873;
+}
+
+body:has(.card:nth-child(2):hover) {
+    --head-from-color: #3864ba;
+    --head-to-color: #8c8dff;
+}
+
+body:has(.card:nth-child(3):hover) {
+    --head-from-color: #9558B2;
+    --head-to-color: #4063D8;
+}

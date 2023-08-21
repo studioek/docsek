@@ -1,0 +1,14 @@
+---
+layout: default
+docs: true
+---
+
+<div class="min-h-screen">
+    <div class="flex justify-center">
+        <article class="prose md:prose-md lg:prose-lg px-2 mt-24">
+            {{ content | reading_time }}<br>
+            {{ content | generate_toc }}
+            {{ content | toc}}
+        </article>
+    </div>
+</div>

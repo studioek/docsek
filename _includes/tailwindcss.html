@@ -1,0 +1,21 @@
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        },
+        daisyui: {
+            themes: ["{{ site.site_theme | default: 'dark' }}"],
+        },
+    }
+</script>
+<style type="text/tailwindcss">
+    @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+    }
+</style>

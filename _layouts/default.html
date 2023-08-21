@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html
+        data-theme="{{ site.site_theme | default: 'dark' }}"
+        lang="{{ site.lang | default: 'en-US' }}"
+        class="scroll-smooth"
+>
+
+  {% include head.html %}
+  {% include tailwindcss.html %}
+  <body>
+    {% include components/navbar.html %}
+
+    {{ content }}
+    {% include components/footer.html %}
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Plain Description -->
+    <title>{{ site.title }} {% if page.title %} | {{ page.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+    <link rel="icon" type="image/ico" href="/assets/icon/favicon.ico">
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}"/>
+    <meta property="og:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}"/>
+    <meta property="og:image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}"/>
+    <meta property="og:url" content="{{site.url}}{{page.url}}"/>
+    <meta property="og:site_name" content="{{ site.title }}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+    <meta name="twitter:image" content="{{site.url}}{{site.socialimg}}">
+    <meta name="twitter:url" content="{{site.url}}{{page.url}}">
+
+    <!-- CSS & fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Put your fonts here -->
+
+    <!-- JS -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</head>

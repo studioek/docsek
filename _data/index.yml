@@ -1,0 +1,13 @@
+# just 3 items for now
+- name: What is the docsek?
+  link: /docs/what-is-the-docsek/
+  description: What is the docsek? What is the purpose of the docsek?
+  finished: false
+- name: How to use?
+  link: /docs/how-to-use/
+  description: How to use the docsek? How to write a docsek?
+  finished: false
+- name: About
+  link: /docs/about/
+  description: About the docsek
+  finished: false

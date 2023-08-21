@@ -1,0 +1,32 @@
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+        <div class="max-w-2xl">
+            <h1 class="text-5xl font-bold title">{{site.title}}</h1>
+            <p class="py-6 tag-line">{{site.tagline}}.</p>
+            <div class="w-full flex flex-wrap mx-auto space-x-2">
+                {% for item in site.data.index %}
+                <div class="card indicator w-full lg:w-48 md:w-40 sm:w-36 px-2 mb-4">
+                    <div class="flex w-full">
+                        <div>
+                            {% if item.finished == false %}
+                            <span class="mr-12 indicator-item badge badge-warning">coming soon...</span>
+                            {% else %}
+                            <span class="mr-12 indicator-item badge badge-success">completed</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-xl md:text-2xl">{{ item.name }}</h2>
+                        <p class="card-desc text-left">{{ item.description }}</p>
+                        <div class="card-actions justify-center mt-2">
+                            <a href="{{ item.link }}" class="btn btn-primary">
+                               {{ item.name }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
